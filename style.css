@@ -1,0 +1,49 @@
+
+style.css {
+    margin: 0;  /** para definir margem**/
+    padding: 0;
+}
+
+.fundo{
+    background-image: linear-gradient(45deg,black,green);  /**Para definir cor do fundo da imagem**/ 
+    height: 100vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; /**fonte da lestras**/
+    text-align: center; 
+}
+
+.calculadora{   /**para realizar modificações na calculadora**/
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7); /**define a cor da calculadora, ultimo numero a trasparencia**/
+    top: 50%;      /** Top, left para alinhar a calculadora ao centro **/
+    left: 50%;
+    transform: translate(-50%,-50%); /** faz com que a calculadora fique exatamente no centro**/
+    border-radius: 15px; /** para redondar as bordas da calculadora**/
+    padding: 15px;
+}
+
+.botao{     /**para padronizar os botões para ficarem todos iguais**/
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer; /** quando passar o mause por cima do botão ele vai mudar o cursor**/
+    margin: 3px;
+    background-color: rgb(31, 31, 31);
+    border: none; /**bordas dos botões**/
+    color: white; /**cor da fonte dos botões**/
+}
+
+.botao:hover{
+    background-color: black; /**para quando passar o mause encima do botão ele mude de cor**/
+}
+
+#resultado{    /**para definir os aidis da tela de resultado**/
+    width: 207px;
+    background-color: white;  /** define a cor**/
+    height: 30px;  /** define a altura**/
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right; /** texto da direita para esquerda**/
+    padding: 5px;
+}

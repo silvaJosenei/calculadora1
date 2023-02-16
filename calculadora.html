@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt--br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculadora.js"></script>
+</head>
+<body>
+    <div class="fundo">
+        <h1>Seja Bem vindo</h1>  <!--h1 texto Bem vindo-->
+        <div class="calculadora">
+            <h2>Calculadora</i></h2>  <!--h2 texto Calculadora-->
+            <p id="resultado"></p>   <!--Paragrafo de resultados-->
+                <table>                 
+                    <tr>  <!--primeira linha de botoes da calculadora-->
+                        <td><button class="botao" onclick="clean()">C</td>     <!--class vai fazer com que todos os botões fiquem iguais-->
+                        <td><button class="botao" onclick="insert('**')">^</td>
+                        <td><button class="botao" onclick="insert('/')">/</button></td>
+                        <td><button class="botao" onclick="insert('*')">*</button></td> 
+                    </tr>
+                    <tr>   <!--segunda linha de botoes da calculadora-->
+                        <td><button class="botao" onclick="insert('7')">7</button></td>  <!--onclick = "insert" para que todos botões funcione-->
+                        <td><button class="botao" onclick="insert('8')">8</button></td>
+                        <td><button class="botao" onclick="insert('9')">9</button></td>
+                        <td><button class="botao" onclick="insert('-')">-</button></td>
+                    </tr>
+                    <tr>   <!--terceira linha de botoes da calculadora-->
+                        <td><button class="botao" onclick="insert('4')">4</button></td>
+                        <td><button class="botao" onclick="insert('5')">5</button></td>
+                        <td><button class="botao" onclick="insert('6')">6</button></td>
+                        <td><button class="botao" onclick="insert('+')">+</button></td>
+                    </tr>
+                    <tr>   <!--quarta linha de botoes da calculadora-->
+                        <td><button class="botao" onclick="insert('1')">1</button></td>
+                        <td><button class="botao" onclick="insert('2')">2</button></td>
+                        <td><button class="botao" onclick="insert('3')">3</button></td>
+                        <td rowspan="2"><button class="botao" style="height: 106px;" onclick="calcular()">=</button></td> <!--rowspan para deixar o botão ' = ' maior expandido e ocupando duas linhas-->
+                    </tr>                                     <!-- height vai definir a altura do botão = -->
+                    <tr>                                      <!-- width vai definir a largura do botão 0 -->
+                        <td colspan="2"><button class="botao" style="width: 106px;" onclick="insert('0')">0</button></td> <!--colspan para deixar o botão ' 0 ' maior expandido e ocupando duas colunas-->
+                        <td><button class="botao" onclick="insert('.')">.</button></td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+</body>
+</html>
+    
+</body>
+</html>
